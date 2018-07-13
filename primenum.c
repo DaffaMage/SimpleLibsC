@@ -9,6 +9,10 @@ int IS_FALSE = 0;
 
 int isPrime(int x){
     int i;
+    if (x < 2)
+    {
+        return IS_FALSE;
+    }
     for(i=2;i<x;i++)
     {
         if (x%i==0)
@@ -21,6 +25,10 @@ int isPrime(int x){
 
 int isNotPrime(int x){
     int i;
+    if (x < 2)
+    {
+        return IS_TRUE;
+    }
     for(i=2;i<x;i++)
     {
         if (x%i==0)
@@ -42,7 +50,7 @@ void printPrimeListA(int start, int finish){
 
 void printPrimeListB(int start, int totalPrimeNumber){
     int i,counter=0;
-    for(i=start;counter<=totalPrimeNumber;i++)
+    for(i=start;counter<totalPrimeNumber;i++)
     {
         if(isPrime(i))
         {
