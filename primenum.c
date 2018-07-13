@@ -11,7 +11,7 @@ int isPrime(int x){
     int i;
     for(i=2;i<x;i++)
     {
-        if (%i==0)
+        if (x%i==0)
         {
             return IS_FALSE;
         }
@@ -20,14 +20,15 @@ int isPrime(int x){
 };
 
 int isNotPrime(int x){
-    if (isPrime(int x))
+    int i;
+    for(i=2;i<x;i++)
     {
-        return IS_FALSE;
+        if (x%i==0)
+        {
+            return IS_TRUE;
+        }
     }
-    else
-    {
-        return IS_TRUE;
-    }
+    return IS_FALSE;
 };
 
 void printPrimeListA(int start, int finish){
