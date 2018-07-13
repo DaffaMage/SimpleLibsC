@@ -36,7 +36,7 @@ void printPrimeListA(int start, int finish){
     for(i=start;i<=finish;i++)
     {
         if(isPrime(i))
-            printf("%d",i);
+            printf("%d ",i);
     }
 };
 
@@ -46,7 +46,7 @@ void printPrimeListB(int start, int totalPrimeNumber){
     {
         if(isPrime(i))
         {
-            printf("%d",i);
+            printf("%d ",i);
             counter++;
         }
     }
@@ -57,6 +57,6 @@ void printPrimeListC(int finish){
     for(i=2;i<=finish;i++)
     {
         if(isPrime(i))
-            printf("%d",i);
+            printf("%d ",i);
     }
 };
