@@ -2,8 +2,8 @@
 #include <stdlib.h>
 
 //CONSTANTS
-int IS_TRUE = 1;
-int IS_FALSE = 0;
+const int PN_IS_TRUE = 1;
+const int PN_IS_FALSE = 0;
 
 //CODES
 
@@ -11,32 +11,32 @@ int isPrime(int x){
     int i;
     if (x < 2)
     {
-        return IS_FALSE;
+        return PN_IS_FALSE;
     }
     for(i=2;i<x;i++)
     {
         if (x%i==0)
         {
-            return IS_FALSE;
+            return PN_IS_FALSE;
         }
     }
-    return IS_TRUE;
+    return PN_IS_TRUE;
 };
 
 int isNotPrime(int x){
     int i;
     if (x < 2)
     {
-        return IS_TRUE;
+        return PN_IS_TRUE;
     }
     for(i=2;i<x;i++)
     {
         if (x%i==0)
         {
-            return IS_TRUE;
+            return PN_IS_TRUE;
         }
     }
-    return IS_FALSE;
+    return PN_IS_FALSE;
 };
 
 void printPrimeListA(int start, int finish){
