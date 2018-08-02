@@ -61,10 +61,5 @@ void printPrimeListB(int start, int totalPrimeNumber){
 };
 
 void printPrimeListC(int finish){
-    int i;
-    for(i=2;i<=finish;i++)
-    {
-        if(isPrime(i))
-            printf("%d ",i);
-    }
+    printPrimeListA(1,finish);
 };
