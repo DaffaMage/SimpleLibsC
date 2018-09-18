@@ -10,9 +10,11 @@
 ** API
 ** buildFibonacciList takes 2 integers, one as start and other as finish
 ** --> generates numbers between 2 points
+** buildFibonacciListB takes 1 integer, works similar to FibonacciList except it only limits the upper bound
 */
 
 void buildFibonacciList(int start, int finish);
+void buildFibonacciListB(int finish);
 
 /*
 ** PRIVATE FUNCTIONS

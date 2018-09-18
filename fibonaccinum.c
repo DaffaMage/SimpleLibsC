@@ -30,3 +30,8 @@ void buildFibonacciList(int start, int finish)
         i++;
     }
 }
+
+void buildFibonacciListB(int finish)
+{
+    buildFibonacciList(1,finish);
+}
