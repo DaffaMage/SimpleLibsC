@@ -10,7 +10,7 @@ short int isLeap(struct calendar cal)
     {
         leap = 1;
     }
-    if (!cal.GregorianMode && cal.year%4==0)
+    else if (!cal.GregorianMode && cal.year%4==0)
     {
         leap = 1;
     }

@@ -9,7 +9,7 @@
 
 struct calendar
 {
-    ///Private data, technically. Sadly C lacks private for stupid reasons
+    ///Unwritable data, technically. Sadly C lacks limiter for some reasons
     int date;
     int month;
     int year;
@@ -21,5 +21,6 @@ struct calendar ConstructCalendar(int date,int month, int year, short int isGreg
 
 ///Functions
 short int isLeap(struct calendar cal);
+void printCal(struct calendar);
 
 #endif // CALENDAR_H_INCLUDED
